@@ -1,8 +1,12 @@
 package com.company;
 
 import java.util.Objects;
-
+/**
+ * @autor Vadim Ginko
+ * @version 1.5
+ */
 public class WrapperString {
+
     private String value = new String();
     private String count = new String();
 
@@ -47,7 +51,11 @@ public class WrapperString {
                 ", count='" + count + '\'' +
                 '}';
     }
-
+    /**
+     * @param old - старый символ
+     * @param new7c - новый символ
+     * @return возвращает название производителя
+     */
     public void Replace (char old, char new7c) {
         this.setValue(this.getValue().replace(old, new7c));
     }

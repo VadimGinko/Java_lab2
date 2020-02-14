@@ -128,8 +128,15 @@ public class Main {
         boolean comRez = c2 == c3;
         System.out.println(comRez);
         //c1[10][10] = "qwe";
-        WrapperString hi = new WrapperString("привет");
-        hi.Replace('и','о');
+        WrapperString hi = new WrapperString("hello");
+        hi.Replace('e','o');
         System.out.println(hi.getValue());
+        WrapperString n = new WrapperString("hi"){
+            public void Replace (char old, char new7c) {
+                this.setValue(this.getValue().replace(old, new7c));
+                System.out.println("Символ '" + old + "' изменён на '" + new7c + "'");
+            }
+        };
+        n.Replace('e','o');
         }
 }

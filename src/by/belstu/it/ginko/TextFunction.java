@@ -2,6 +2,9 @@ package by.belstu.it.ginko;
 
 
 public class TextFunction {
+    public static void main(String[] args) {
+        System.out.println("Hello world");
+    }
 
     public String getValue()
     {
